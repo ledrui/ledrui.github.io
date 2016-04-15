@@ -104,8 +104,12 @@ width:855px;
 	text-decoration: none;
 }
 
-section {
+section.success {
     padding: 100px 0;
+        padding-top: 100px;
+        padding-right: 0px;
+        padding-bottom: 100px;
+        padding-left: 0px;
 }
 
 #content
@@ -173,4 +177,15 @@ color:#999999;
 
 .intro-text {
 	text-align: center;
+}
+
+.col-lg-offset-2 {
+    margin-left: 16.66666667%;
+}
+.col-lg-4 {
+    width: 33.33333333%;
+}
+
+.app {
+    display: flex;
 }

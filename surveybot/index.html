@@ -17,10 +17,15 @@
   <body>
     <div id="webchat" role="main"></div>
     <script>
+      const styleOptions = {
+        bubbleBackground: 'rgba(0, 0, 255, .1)',
+        bubbleFromUserBackground: 'rgba(0, 255, 0, .1)'
+      };
       (async function() {
         const utils = await fetch('./utils.json');
         const secret = await utils.json();
         const SECRET_KEY = secret["secret"];
+
       window.WebChat.renderWebChat({
         directLine: window.WebChat.createDirectLine({ token: SECRET_KEY }),
         webSpeechPonyfillFactory: window.WebChat.createBrowserWebSpeechPonyfillFactory(),
